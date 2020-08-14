@@ -1,0 +1,224 @@
+:root{
+    --text-color: #4e4e4e;
+    --body-color: #ffffff;
+    --theme-text-color: #ffffff;
+    --theme-color: rgb(0, 184, 160);
+}
+body{
+    /* Default Cursor */
+    cursor: default;
+
+    /* Default Colors */
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+/* Add Open Sans */
+@font-face{
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans/OpenSans-SemiBold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans/OpenSans-Light.ttf);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+/* Add Roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+/* Default Topogropahy */
+h1 {
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: calc(94rem / 16);
+    letter-spacing: calc(-1.5rem / 16);
+}
+h2 {
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: calc(59rem / 16);
+    letter-spacing: calc(-0.5rem / 16);
+}
+h3 {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: calc(47rem / 16);
+    letter-spacing: calc(0rem / 16);
+}
+h4 {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: calc(33rem / 16);
+    letter-spacing: calc(0.25rem / 16);
+}
+h5 {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: calc(24rem / 16);
+    letter-spacing: calc(0rem / 16);
+}
+h6 {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: calc(20rem / 16);
+    letter-spacing: calc(0.15rem / 16);
+}
+span {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: calc(16rem / 16);
+    letter-spacing: calc(0.15rem / 16);
+}
+p {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: calc(16rem / 16);
+    letter-spacing: calc(0.5rem / 16);
+}
+footer{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: calc(14rem / 16);
+    letter-spacing: calc(0.5rem / 16);
+}
+button{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: calc(14rem / 16);
+    letter-spacing: calc(1.25rem / 16);
+    text-transform: uppercase;
+}
+figcaption, caption, label {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: calc(12rem / 16);
+    letter-spacing: calc(0.4rem / 16);
+}
+nav{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: calc(12rem / 16);
+    letter-spacing: calc(1.5rem / 16);
+    text-transform: uppercase;
+}
+a{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: calc(16rem / 16);
+    letter-spacing: calc(0.5rem / 16);
+}
+
+/* Icon Styles */
+.icon{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Button Styles */
+button{
+    border: none;
+    border-radius: calc(2rem / 16);
+    outline: none;
+    box-shadow: none;
+    background-color: inherit;
+    margin: calc( 8rem/ 16);
+    padding: calc(8rem / 16);
+    color: inherit;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Input Styles */
+input{
+    border: none;
+    border-bottom-width: calc(1rem / 16);
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    background-color: none;
+    margin: calc(16rem / 16);
+    padding: calc(8rem / 16);
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: calc(16rem / 16);
+    letter-spacing: calc(1.25rem / 16);
+    outline: none;
+    color: rgba(0,0,0,0.6);
+}
+
+/* Main Position */
+@media screen and (min-width: 600px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        padding: calc(12rem / 16);
+        background-color: var(--theme-color);
+    }
+    main{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 20%;
+        padding: calc(52rem / 16);
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(36rem / 16);
+        padding: calc(12rem / 16);
+        background-color: var(--theme-color);
+    }
+    main{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        padding: calc(52rem / 16) calc(12rem / 16);
+        text-align: center;
+    }
+}
